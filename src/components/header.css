@@ -4,7 +4,8 @@ header {
   width: 100%;
   min-height: 57px;
   z-index: 5;
-  background-color: var(--note-bg);
+  /* background-color: var(--note-bg); */
+  background-color: red;
   border-bottom: 1px solid var(--separator);
   display: flex;
   justify-content: space-between;
