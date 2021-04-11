@@ -5,7 +5,7 @@ header {
   min-height: 57px;
   z-index: 5;
   /* background-color: var(--note-bg); */
-  background-color: red;
+  background-color: violet;
   border-bottom: 1px solid var(--separator);
   display: flex;
   justify-content: space-between;
