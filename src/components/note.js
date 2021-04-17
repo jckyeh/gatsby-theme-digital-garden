@@ -21,6 +21,10 @@ const Note = (data) => {
         </div>
       ) : null}
       <MDXProvider components={{ ...components, a: AnchorTag }}>
+
+        {/* Jack added line below */}
+        {/* <h1>Title goes here</h1> */}
+
         <MDXRenderer>{data.mdx}</MDXRenderer>
       </MDXProvider>
       <ReferencesBlock references={data.inboundReferences} />

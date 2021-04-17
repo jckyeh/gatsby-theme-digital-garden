@@ -10,7 +10,7 @@ const ReferencesBlock = ({ references }) => {
 
   return (
     <div className="references-block">
-      <h3>Referred in</h3>
+      <h3>Links to this note</h3>
       <div>
         {references.map((ref) => (
           <Reference node={ref} key={ref.id} />

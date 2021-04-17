@@ -4,8 +4,7 @@ header {
   width: 100%;
   min-height: 57px;
   z-index: 5;
-  /* background-color: var(--note-bg); */
-  background-color: slateblue;
+  background-color: var(--note-bg);
   border-bottom: 1px solid var(--separator);
   display: flex;
   justify-content: space-between;
@@ -17,10 +16,16 @@ header {
 }
 
 header > a {
-  font-weight: 700;
+  /* font-weight: 700; */
   color: var(--text);
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+/* Jack's addition */
+header > a > h1 {
+  font-size: 1rem;
+  margin: auto;
 }
 
 header .controls {

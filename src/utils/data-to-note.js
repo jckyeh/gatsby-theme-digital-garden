@@ -53,7 +53,8 @@ const mapInboundRefs = (ref) =>
       }
     : ref.parent.fields && ref.parent.fields.title // File
     ? {
-        content: null,
+        // content: null,
+        content: ref.parent.childMdx.excerpt, // JACK added this
         title: ref.parent.fields.title,
         id: ref.parent.id,
         slug: ref.parent.fields.slug,
@@ -61,8 +62,10 @@ const mapInboundRefs = (ref) =>
       }
     : console.warn(`Cannot map inbound ref`, ref) || null;
 
-export const dataToNote = (data) =>
-  data.roamPage
+export const dataToNote = (data) => {
+  // console.log("data to note: ", data);
+
+  return data.roamPage
     ? {
         title: data.roamPage.title,
         mdx: data.roamPage.childMdx.body,
@@ -100,6 +103,7 @@ export const dataToNote = (data) =>
           .filter((x) => !!x),
       }
     : null;
+};
 
 export const dataToSlug = (data) =>
   data.roamPage

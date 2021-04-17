@@ -40,13 +40,14 @@ pre {
 
 h1,
 h2,
-h3 {
-  font-weight: 700;
+h3,
+h4 {
+  font-weight: 600;
 }
 
 hr {
   border: 0 solid var(--separator);
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
   border-top-width: 1px;
   box-sizing: content-box;
@@ -65,13 +66,36 @@ a:hover {
 }
 
 h1 {
-  font-size: 1.875rem;
-  margin-top: 1rem;
+  /* font-size: 1.875rem; */
+  font-size: 2rem;
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Jack added */
+/* Based on type scale here: https://spencermortensen.com/articles/typographic-scale/ */
+h2 {
+  font-size: 1.5874em;
+  /* font-size: 24px; */
+  margin: 1.5em 0 0.5em;
+}
+
+/* Jack added */
+h3 {
+  font-size: 1.2599em;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
 
 .layout {

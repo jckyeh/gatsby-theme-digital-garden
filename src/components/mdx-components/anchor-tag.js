@@ -50,6 +50,10 @@ export const AnchorTag = ({
       <div id={ref.id} className="popover with-markdown">
         {ref.title === ref.displayTitle ? (
           <React.Fragment>
+
+            {/* Jack's addition below */}
+            {/* <h3>{ref.title}</h3> */}
+
             <MDXProvider components={nestedComponents}>
               <MDXRenderer>{ref.mdx}</MDXRenderer>
             </MDXProvider>

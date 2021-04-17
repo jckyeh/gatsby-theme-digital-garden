@@ -1,10 +1,10 @@
 /*********** TYPOGRAPHY **************/
 
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  font-family: -apple-system, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /*********** LIGHT MODE **************/
@@ -12,13 +12,16 @@ html {
 body.light-mode {
   --main-bg: #fafafc;
   --note-bg: #ffffff;
-  --text: #1a202c;
+  /* --text: #1a202c; */
+  --text: #292929;
   --separator: #e2e8f0;
   --shadow: rgba(0, 0, 0, 0.1);
-  --link: #3182ce;
+  /* --link: #3182ce; */
+  --link: rgba(26, 137, 23, 1);
 
   /* References */
-  --references-bg: #ebf4ff;
+  /* --references-bg: #ebf4ff; */
+  --references-bg: #fafafa;
   --references-bg-80: rgb(235, 244, 255, 0.8);
   --references-bg-0: rgb(235, 244, 255, 0);
   --references-text: #718096;

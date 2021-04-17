@@ -15,6 +15,9 @@ export const references = graphql`
               slug
               title
             }
+            childMdx {
+              excerpt
+            }
           }
         }
       }
@@ -28,6 +31,9 @@ export const references = graphql`
             fields {
               slug
               title
+            }
+            childMdx {
+              excerpt
             }
           }
         }

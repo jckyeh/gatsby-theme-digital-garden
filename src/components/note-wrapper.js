@@ -14,6 +14,9 @@ function noteContainerClassName({ overlay, obstructed, highlighted } = {}) {
 }
 
 const NoteWrapper = ({ children, slug, title }) => {
+
+  // console.log("children in note-wrapper: ", children)
+  
   const [, state, i] = useStackedPage();
 
   return (
@@ -23,7 +26,10 @@ const NoteWrapper = ({ children, slug, title }) => {
     >
       <div className="note-content">{children}</div>
       <LinkToStacked to={slug} className="obstructed-label">
+        
+        {/* This is the vertical title shown on the side of the stack */}
         {title}
+
       </LinkToStacked>
     </div>
   );
